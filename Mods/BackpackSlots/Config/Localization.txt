@@ -1,7 +1,0 @@
-Key,UsedInMainMenu,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
-
-perkPackMuleRank1LongDesc,progression,perk Str,,,We all have to start some where.\nCarry five more items without being encumbered.,,
-perkPackMuleRank2LongDesc,progression,perk Str,,,You are becoming a decent bag lady.\nCarry ten more items without being encumbered.,,
-perkPackMuleRank3LongDesc,progression,perk Str,,,You know it's in there somewhere.\nCarry fifteen more items without being encumbered.,,
-perkPackMuleRank4LongDesc,progression,perk Str,,,You know exactly where everything is.\nCarry twenty more items without being encumbered.,,
-perkPackMuleRank5LongDesc,progression,perk Str,,,Now you are just showing off.\nCarry twenty five more items without being encumbered.,,
