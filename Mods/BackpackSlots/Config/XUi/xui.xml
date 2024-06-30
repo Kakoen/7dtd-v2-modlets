@@ -1,0 +1,4 @@
+<configs>
+	<set xpath="/xui/ruleset[@name='default']/@scale">1.1295</set>				<!-- vanilla 1.255 -->
+	<set xpath="/xui/ruleset[@name='default']/@stackpanel_scale">0.945</set>		<!-- vanilla 1.05 -->
+</configs>
