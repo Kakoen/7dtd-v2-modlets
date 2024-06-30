@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xml>
-	<ModInfo>
-		<Name value="Jakmeister999's REASONABLE Large Stacks - Alpha 21" />
-		<Description value="Adds larger stacks to Food/Drinks, Medical Items, Ammos, Resources and a few miscellaneous items, in a more REASONABLE stack size." />
-		<Author value="Jakmeister999" />
-		<Version value="1.0" />
 
-	</ModInfo>
+<xml>
+	<Name value="Jakmeister999_REASONABLE_Large_Stacks_V1" />
+	<DisplayName value="Jakmeister999's REASONABLE Large Stacks (V1.0)" />
+	<Version value="1.0.0" />
+	<Description value="Adds larger stacks to Food/Drinks, Medical Items, Ammos, Resources and a few miscellaneous items, in a more REASONABLE stack size." />
+	<Author value="Jakmeister999" />
+	<Website value=""/>
 </xml>
