@@ -1,5 +1,5 @@
 HUDPlus
-A21 - Version 1.9.2
+V1.0 Version 2.0.0
 
 
 ______________________________________________________________________________________________________________________
@@ -56,17 +56,27 @@ ________________________________________________________________________________
 	-Lowered toolbelt for backpack mod compatibility and added slot numbers.
 	-Improved readability of the chat output when sending and receiving messages.
 	-Map information moved to its own section next to the map with labels.
+		-Added in Map information Outdoor Temperature
+		-Used the Coat icon to represent Feels Like Temp
+		-Used the temperature icon for Outdoor Temp
 	-Crafting and burning times adjusted for easier viewing.
 	-Date, Time and Skulls displayed on all menus.
 	-Viewing quest selections made easier with improved background, color, and poi_names.
 	-Simple color coordination of interactive blocks or npcs.
 	-5 crafting slots positioned evenly.
 	-Removed Pop up of wandering into new location.
-	-Simplified location name viewing.
 
 
 ______________________________________________________________________________________________________________________
 5.  CHANGELOG
+V2.0.0
+-Updated for 7d2d Version 1.0
+-Instead of making a separate addon, placing the skulls/location as part of the compass area.
+-Added the "sprinting" notification
+-Keeping the vanilla location/skulls box in place
+
+V1.9.3
+-Added the date and time while speaking with a trader.
 
 v1.9.2
 -The word "level" no longer disappears permanently when using the F7 key.

@@ -3,57 +3,71 @@
 
 
 
-	<!--LOCATION INDICATOR SIMPLIFICATION-->
+	<!--LOCATION INDICATOR ADJUSTMENTS-->
 		<!--Removing the entering area x thing.-->
 		<remove xpath="/windows/window[@name='windowEntering']"/>
 		
-		<!--positioning of location name-->
-		<set xpath="/windows/window[@name='windowLocation']/label/@pos">0,-8</set>
-		<set xpath="/windows/window[@name='windowLocation']/label/@justify">Right</set>
-		
-		<!--removal of skulls and background-->
-		<remove xpath="/windows/window[@name='windowLocation']/sprite"/>		
-		<remove xpath="/windows/window[@name='windowLocation']/grid"/>
-	
-		
-
+		<!--Repositioning location next to compass-->
+		<remove xpath="/windows/window[@name='windowLocation']"/>
+				
+		<append xpath="/windows/window[@name='windowCompass']">	
+			<rect name="Location" pos="521, -4" anchor="CenterTop" width="240" height="60" depth="-20" controller="Location">	
+				<sprite pos="0,6" name="Background" sprite="menu_empty" color="0,0,0,225" foregroundlayer="true" height="46" width="250" type="sliced" />
+				<label depth="3" text="{locationname}" font_size="20" justify="center" pos="6,2" height="28" />
+				<grid pos="125, -28" pivot="center" cols="8" cell_width="18" cell_height="16">
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor1}" visible="{visible1}" />
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor2}" visible="{visible2}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor3}" visible="{visible3}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor4}" visible="{visible4}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor5}" visible="{visible5}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor6}" visible="{visible6}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor7}" visible="{visible7}"/>
+					<rect width="16" height="16" visible="{visible_half}">
+						<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" type="filled" fill="0.5" color="255,128,0"/>
+						<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" type="filled" fill="0.5" fillinvert="true"  color="[lightGrey]"/>
+					</rect>
+				</grid>		
+			</rect>		
+		</append>	
 	
 		<!--Added the location display onto every window.-->
 		<append xpath="/windows/window[@name='windowNonPagingHeader']">
-			<rect name="Location" pos="525, -5" width="240" height="60" depth="-20" controller="Location">
+			<rect name="Location" pos="525, -4" anchor="CenterTop" width="240" height="60" depth="-20" controller="Location">	
 				<sprite pos="0,6" name="Background" sprite="menu_empty" color="[darkestGrey]" height="46" width="250" type="sliced" />
-				<grid pos="125, -12" pivot="center" cols="8" cell_width="30" cell_height="16">
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor1}" visible="{visible1}" />
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor2}" visible="{visible2}"/>
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor3}" visible="{visible3}"/>
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor4}" visible="{visible4}"/>
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor5}" visible="{visible5}"/>
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor6}" visible="{visible6}"/>
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor7}" visible="{visible7}"/>
+				<label depth="3" text="{locationname}" font_size="20" justify="center" pos="6,2" height="28" />
+				<grid pos="125, -28" pivot="center" cols="8" cell_width="18" cell_height="16">
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor1}" visible="{visible1}" />
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor2}" visible="{visible2}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor3}" visible="{visible3}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor4}" visible="{visible4}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor5}" visible="{visible5}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor6}" visible="{visible6}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor7}" visible="{visible7}"/>
 					<rect width="16" height="16" visible="{visible_half}">
-						<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" type="filled" fill="0.5" color="255,128,0"/>
-						<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" type="filled" fill="0.5" fillinvert="true"  color="[lightGrey]"/>
+						<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" type="filled" fill="0.5" color="255,128,0"/>
+						<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" type="filled" fill="0.5" fillinvert="true"  color="[lightGrey]"/>
 					</rect>
-				</grid>				
-			</rect>
+				</grid>		
+			</rect>	
 		</append>
 		<append xpath="/windows/window[@name='windowPagingHeader']">
-			<rect name="Location" pos="725, -5" width="240" height="60" depth="-20" controller="Location">
+			<rect name="Location" pos="725, -4" anchor="CenterTop" width="240" height="60" depth="-20" controller="Location">	
 				<sprite pos="0,6" name="Background" sprite="menu_empty" color="[darkestGrey]" height="46" width="250" type="sliced" />
-				<grid pos="125, -12" pivot="center" cols="8" cell_width="30" cell_height="16">
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor1}" visible="{visible1}" />
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor2}" visible="{visible2}"/>
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor3}" visible="{visible3}"/>
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor4}" visible="{visible4}"/>
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor5}" visible="{visible5}"/>
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor6}" visible="{visible6}"/>
-					<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" color="{difficultycolor7}" visible="{visible7}"/>
+				<label depth="3" text="{locationname}" font_size="20" justify="center" pos="6,2" height="28" />
+				<grid pos="125, -28" pivot="center" cols="8" cell_width="18" cell_height="16">
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor1}" visible="{visible1}" />
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor2}" visible="{visible2}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor3}" visible="{visible3}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor4}" visible="{visible4}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor5}" visible="{visible5}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor6}" visible="{visible6}"/>
+					<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" color="{difficultycolor7}" visible="{visible7}"/>
 					<rect width="16" height="16" visible="{visible_half}">
-						<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" type="filled" fill="0.5" color="255,128,0"/>
-						<sprite depth="2" name="windowicon" width="28" height="28" sprite="ui_game_symbol_skull" type="filled" fill="0.5" fillinvert="true"  color="[lightGrey]"/>
+						<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" type="filled" fill="0.5" color="255,128,0"/>
+						<sprite depth="2" name="windowicon" width="16" height="16" sprite="ui_game_symbol_skull" type="filled" fill="0.5" fillinvert="true"  color="[lightGrey]"/>
 					</rect>
-				</grid>				
-			</rect>
+				</grid>		
+			</rect>	
 		</append>
 
 
@@ -61,7 +75,7 @@
 
 <!--CHATBOX IMPROVEMENT
 	Feature: 	1. Improved readability of the chat output when sending and receiving messages.
-				2. The background of the Chat Output fades when the text does, not immeidately after sending a message.
+				2. The background of the Chat Output fades when the text does, not immediately after sending a message.
 				3. Chat windows now appear behind other windows.
 	
 		Why:	1. My goal is for easier readability / accessability.
@@ -188,6 +202,7 @@
 					<sprite depth="8"  name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
 					<filledsprite depth="8" name="background" color="0,0,0,255" width="150" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
 					<filledsprite depth="3" name="background" color="0,0,0,255" width="150" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+					<sprite depth="8" visible="{sprintactive}" name="sprint" atlas="{uiatlas}" sprite="server_z_always_run" size="36,36" pos="147,-19" pivot="left"/>
 				</rect>
 
 				<!--Outdoor Temperature and Player Elevation-->
@@ -349,6 +364,7 @@
 			
 			
 	
+	
 <!--CRAFTING IMPROVEMENT
 	Feature: 	Crafting and burning times adjusted for easier viewing.
 	
@@ -373,6 +389,8 @@
 		<!--5th Crafting Slot-->
 			<set xpath="/windows/window[@name='windowCraftingQueue']/rect/grid/@cols">5</set>
 			<set xpath="/windows/window[@name='windowCraftingQueue']/rect/@pos">9,0</set>
+
+
 
 
 
@@ -431,16 +449,20 @@
 			
 		<!--Recreated Day and Time seperately with backgrounds.-->
 			<append xpath="/windows/window[@name='windowCompass']">
-				<!--Day-->			
-				<rect name="hud" pos="-117,-1" rows="1" cols="1" width="121">
-						<sprite depth="1" pos="0,-2" height="38" width="121" color="0,0,0,200" type="sliced" foregroundlayer="true"/>	
-						<label depth="2" name="TextContent" pos="4,-9" width="113" height="30" text="{daytitle}: [{daycolor}]{day}" font_size="28" color="[white]" justify="center" visible="{showtime}"/>	
-				</rect>	
-				<!--Time-->
-				<rect name="hud" pos="515,-1" rows="1" cols="1" width="108" >
-						<sprite depth="1" pos="0,-2" height="38" width="121" color="0,0,0,200" type="sliced" foregroundlayer="true"/>	
-						<label depth="2" name="TextContent" pos="4,-9" width="113" height="30" text="{timetitle}: [DECEA3]{time}" font_size="28" color="[white]" justify="center" visible="{showtime}"/>				
-				</rect>	
+				<!--Day and Time-->			
+				<rect name="hud" pos="-250,-4" rows="1" cols="1" width="250">
+						<sprite pos="0,6" name="Background" sprite="menu_empty" color="0,0,0,225" foregroundlayer="true" height="46" width="250" type="sliced" />
+						<label depth="3" text="{daytitle}" width="140" font_size="20" justify="center" pos="6,2" height="28" />
+						<label depth="3" text="[{daycolor}]{day}" width="140" font_size="20" justify="center" pos="6,-20" height="28" />
+						
+						<label depth="3" text="{timetitle}" width="170" font_size="20" justify="center" pos="86,2" height="28" />
+						<label depth="3" text="[DECEA3]{time}" width="170" font_size="20" justify="center" pos="86,-20" height="28" />
+						
+						
+						<!--<label depth="2" name="TextContent" pos="4,-9" width="125" height="40" text="{daytitle}: [{daycolor}]{day}" font_size="28" color="[white]" justify="left" visible="{showtime}"/>	
+						<label depth="2" name="TextContent" pos="129,-9" width="125" height="40" text="{timetitle}: [DECEA3]{time}" font_size="28" color="[white]" justify="left" visible="{showtime}"/>				
+			-->	</rect>	
+
 			</append>
 	
 		<!--Added the Day and Time onto every window.-->
@@ -521,6 +543,7 @@
 
 <!--QUEST SELECTION IMPROVEMENTS
 	Feature: 	Viewing quest selections made easier with improved background, color, and poi_names.
+				Added Time/Date to be viewable while looking at options.
 				
 	Why: 		Sometimes found it difficult to read the the selection with the transparent background.
 				I prefer to know the POI from the quest options list.
@@ -547,11 +570,16 @@
 		<!--Created new quest selection window with wider and solid background.-->
 			<append xpath="/windows">
 				<window name="windowResponses" pos="-750,0" width="700" height="320" anchor="RightCenter" cursor_area="true">
-					<sprite depth="0" name="background" pos="-25,25" width="740" height="350" type="sliced" color="96,96,96,255" globalopacity="false"/>
-					<sprite depth="1" name="background" pos="-20,20" width="730" height="340" type="sliced" color="0,0,0,255" globalopacity="false"/>
-					<grid name="items" pos="3,-6" rows="8" cols="1" width="690" height="200" cell_width="590" cell_height="40" repeat_content="true" arrangement="vertical" controller="DialogResponseList">
+					<sprite depth="0" name="background" pos="-25,25" width="740" height="362" type="sliced" color="96,96,96,255" globalopacity="false"/>
+					<sprite depth="1" name="background" pos="-20,20" width="730" height="352" type="sliced" color="0,0,0,255" globalopacity="false"/>
+					<grid name="items" pos="3,-18" rows="8" cols="1" width="690" height="200" cell_width="590" cell_height="40" repeat_content="true" arrangement="vertical" controller="DialogResponseList">
 						<response_entry id="0" />
 					</grid>
+					
+					<rect pos="535,20"> 
+						<sprite depth="2" name="dayTimeIcon" width="24" height="24" 	pos="-30,-10" 	sprite="ui_game_symbol_clock" color="[iconColor]" foregroundlayer="true" visible="{showtime}"/>
+						<label depth="2" name="dayTimeLabel" width="230" height="28"	pos="0,-12"  text="{mapdaytimetitle}: [DECEA3]{mapdaytime}[-]" font_size="22" controller="MapStats" visible="{showtime}"/>
+					</rect>
 				</window>
 			</append>	
 	
