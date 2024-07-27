@@ -2,7 +2,23 @@
 
 
 
+<!--New Locked Slots icons to be easier seen?-->
 
+		<remove xpath="/controls/backpack_item_stack/rect/button[@name='rectSlotLock']"/>
+		<remove xpath="/controls/backpack_item_stack/rect/sprite[@name='iconSlotLock']"/>
+
+
+		<append xpath="/controls/backpack_item_stack/rect">
+				<button name="rectSlotLock" depth="15" style="press, hover" width="65" height="65" visible="{userlockmode}" sprite="" hoverscale="1" use_selection_box="true">
+					<sprite depth="3" name="iconSlotLock" width="64" height="64" sprite="menu_empty3px"  type="sliced" fillcenter="true" color="{# userlockedslot ? '255, 0, 0,150' : '0,255,0,150' }"  />
+					<sprite depth="3" name="iconSlotLock" width="64" height="64" sprite="menu_empty3px"  type="sliced" fillcenter="false" color="{# userlockedslot ? '255, 0, 0,150' : '0,255,0,150' }"  />
+				</button>
+				<sprite depth="3" name="iconSlotLock" width="64" height="64" sprite="menu_empty3px"  type="sliced" fillcenter="true" visible="{# userlockedslot and !userlockmode}" color="255,0,0,150" />
+				<sprite depth="3" name="iconSlotLock" width="64" height="64" sprite="menu_empty3px"  type="sliced" fillcenter="false" visible="{# userlockedslot and !userlockmode}" color="255,0,0,150" />
+		</append>
+
+
+		
 
 <!--CRAFTING IMPROVEMENT
 	Feature: 	Crafting and burning times adjusted for easier viewing.

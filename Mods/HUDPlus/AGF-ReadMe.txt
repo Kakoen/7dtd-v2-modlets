@@ -1,5 +1,5 @@
 HUDPlus
-V1.0 Version 2.0.0
+V1.0 Version 3.0.0
 
 
 ______________________________________________________________________________________________________________________
@@ -52,6 +52,7 @@ ________________________________________________________________________________
 4.  FEATURES
 
 	-Compact and readable display of health, stamina, food, water, level, xp, elevation, and temperature.
+	-Lockable slots have easy visuals.
 	-Wider and accurate compass with a center mark.
 	-Lowered toolbelt for backpack mod compatibility and added slot numbers.
 	-Improved readability of the chat output when sending and receiving messages.
@@ -65,10 +66,36 @@ ________________________________________________________________________________
 	-Simple color coordination of interactive blocks or npcs.
 	-5 crafting slots positioned evenly.
 	-Removed Pop up of wandering into new location.
+	-A purple book icon that opens up Details on one page!
+		-Magazine unlocks
+		-Books
+		-Unlocks from Schematics/Books (Update in works)
+		-Armor Details (Under Construction)
 
 
 ______________________________________________________________________________________________________________________
 5.  CHANGELOG
+v3.0.0
+-Added a "purple book" icon to show magazines on one page
+	-books on one page
+	-unlocks on one page
+	-and armor details
+
+v2.1.0
+-updated for V1.0(b325)
+-Lockable slots system updated with easier visuals
+-Added another dew collector interaction prompt I missed.
+
+v2.0.3
+-fixed the remaining interaction prompts for dew collectors
+-added one I missed
+
+v2.0.2
+-fixed the show time twitch integration thingy.
+
+v2.0.1
+-Added the missing interaction prompts for dew collectors... But in beta, not all languages are present.
+
 V2.0.0
 -Updated for 7d2d Version 1.0
 -Instead of making a separate addon, placing the skulls/location as part of the compass area.
