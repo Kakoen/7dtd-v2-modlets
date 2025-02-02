@@ -51,5 +51,17 @@
 
 
 
+<!--Part of the Map Invites Section to align with the map-->
+
+<set xpath="/controls/invites_entry/rect/@height">37</set>
+<set xpath="/controls/invites_entry/rect/sprite[@name='backgroundMain']/@height">43</set>
+<set xpath="/controls/invites_entry/rect/sprite[@name='background']/@height">39</set>
+<set xpath="/controls/invites_entry/rect/label[@name='Name']/@pos">160,-17</set>
+<set xpath="/controls/invites_entry/rect/label[@name='Name']/@height">25</set>
+<set xpath="/controls/invites_entry/rect/label[@name='Distance']/@pos">312,-17</set>
+<set xpath="/controls/invites_entry/rect/label[@name='Name']/@height">25</set>
+
+
+
 
 </AGF-HUDPlus>
