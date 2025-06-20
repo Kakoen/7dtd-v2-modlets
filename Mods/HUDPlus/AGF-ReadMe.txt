@@ -1,5 +1,5 @@
 HUDPlus
-V1.1 Version 3.3.0
+V2 Version 4.1.0
 
 
 ______________________________________________________________________________________________________________________
@@ -67,7 +67,7 @@ ________________________________________________________________________________
 	-5 crafting slots positioned evenly.
 	-Removed Pop up of wandering into new location.
 	-Read schematics / magazines / books have read book icon of slight transparency and green
-	-A purple book icon that opens up Details on one page!
+	-A purple book icon that opens up Details on one page (With Zooming Option)!
 		-Magazine unlocks
 		-Books
 		-Unlocks from Schematics/Books
@@ -76,6 +76,47 @@ ________________________________________________________________________________
 
 ______________________________________________________________________________________________________________________
 5.  CHANGELOG
+v4.1.0
+-Updated for V2!
+-Had to rework aspects of purple book due to more stable "button" system.
+-Fixed an error since the inception of Purple Book, lol.
+-Purple book's "zoom in feature" are now buttons in a header to easily swap between them.
+****THIS IS BETA VERSION, as STORM ALERTS are not yet SHOWING***
+
+v4.0.0
+-Found missing translations
+-Completed the Zooming in features For crafting list and armors. (along with adapting my mods that effect these.)
+-Lots of corrections and cleaning up of both UI of the purple book AND in the xml code.
+-Edited parts of code to be display changes to checklist made by any updated AGF mods.
+
+
+v3.5.0
+-centered a few things that I can't believe weren't centered long ago!!!
+-Added under the purple book's tab, a row showing the completed books series for easier finding the cursor's spot for tooltip
+-Updated information in the purple book's header to encourgae using cursor hover OR clicking to zoom where apprioriate
+
+v3.4.0
+-Made some minor adjustments to a few things
+-Made some of the hard edges of my sections with a squared background have curved corners
+-Changed the Elevation Icon
+-Other changes are related to compatibility with additional HUD options
+-A zoom in feature of the Armor's Tab!!!
+
+v3.3.4
+-Fixed the buff pop up section, where other languages it would go over the icon. (Just Vanilla Code, now updated to changes fun pimps made)
+
+v3.3.3
+-Under the crafting checklist, workstation section background goes green when maxed out, appropriately.
+(Thanks Snakie)
+
+v3.3.2
+-Organized the code for the checklist (purple book)
+-On the Armors Tab, I rearranged armor types of light, medium, and heavy in alphabetical order
+-Added specific names to specific entries of checklists so that Master Tool will be compatible
+
+v3.3.1
+-Added some naming scheme for crafting list, to make compatible with other VP mods of mine.
+
 V3.3.0
 -Updated for V1.1.
 -Stealth is updated
@@ -131,7 +172,7 @@ V1.9.3
 v1.9.2
 -The word "level" no longer disappears permanently when using the F7 key.
 -In the menu display of skulls, if it was only biome skulls, they were tiny. Now they are the right size.
-
+-Started tracking changes
 
 
 

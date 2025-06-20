@@ -1,0 +1,9 @@
+﻿Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+agfNextBloodMoon,,,,,"Next Blood Moon",,"Weiter Blutmond","Siguiente Luna de sangre","Suivant Lune sanglante","Avanti Luna rossa","次 ブラッドムーン","다음 블러드 문","Dalej Krwawy Księżyc","Próximo Lua de sangue","Далее Кровавая луна","Sonraki Kanlı Ay","下一个 血月","下一個 血月"
+daycountdown_1,,,,6,"6 Days",,"6 Tage","6 Días","6 Jours","6 Giorni","6 日","6 일","6 Dni","6 Dias","6 Дней","6 Gün","6 天数","6 天"
+daycountdown_2,,,,5,"5 Days",,"5 Tage","5 Días","5 Jours","5 Giorni","5 日","5 일","5 Dni","5 Dias","5 Дней","5 Gün","5 天数","5 天"
+daycountdown_3,,,,4,"4 Days",,"4 Tage","4 Días","4 Jours","4 Giorni","4 日","4 일","4 Dni","4 Dias","4 Дней","4 Gün","4 天数","4 天"
+daycountdown_4,,,,3,"3 Days",,"3 Tage","3 Días","3 Jours","3 Giorni","3 日","3 일","3 Dni","3 Dias","3 Дней","3 Gün","3 天数","3 天"
+daycountdown_5,,,,2,"2 Days",,"2 Tage","2 Días","2 Jours","2 Giorni","2 日","2 일","2 Dni","2 Dias","2 Дней","2 Gün","2 天数","2 天"
+daycountdown_6,,,,1,"1 Day",,"1 Tag","1 Día","1 Jour","1 Giorno","1 日","1 일","1 Dzień","1 Dia","1 День","1 Gün","1 天数","1 天"
+daycountdown_0,,,,0,"Blood Moon Tonight",,"Blutmond heute Nacht","Luna de sangre","Lune sanglante ce soir","Stanotte c'è la luna rossa","ブラッドムーンの夜","블러드문의 밤","Krwawy Księżyc","Lua de sangue hoje","Ночь кровавой луны","Bu Gece Kanlı Ay","血月之夜","血月來臨"

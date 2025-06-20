@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="AGF-V2-HUDPlus-BMCounter07Days-KeppDayCount"/>
+	<DisplayName value="AGF HUD Plus - Adds BM countdown 7 days"/>
+	<Version value="1.0.0"/>
+	<Description value="Adds BM countdown for every 7 days"/>
+	<Author value="AuroraGiggleFairy (AGF)"/>
+	<Website value="https://auroragigglefairy.github.io/"/>
+</xml>
